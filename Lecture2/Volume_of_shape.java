@@ -21,7 +21,7 @@ public class Volume_of_shape {
         System.out.println(cylinder);
 
         System.out.println("---- Volume of Hemisphere ----");
-        double hemisphere = 2.0/3.0 * pi * r * r * r;
+        double hemisphere = (2.0/3.0) * pi * r * r * r;
         System.out.println(hemisphere);
 
     }
