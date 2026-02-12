@@ -1,6 +1,6 @@
 package Lecture5;
 
-public class Pattern4 {
+public class Pattern10 {
 
     static void printPatternUsingWhileLoop() {
         System.out.println("Printing Pattern using while loop");
@@ -19,7 +19,7 @@ public class Pattern4 {
             int stars = 2 * row - 1;
             while (stars > 0) {
                 if (stars % 2 == 0) {
-                    System.out.print("!");
+                    System.out.print(" ");
                     stars--;
                 } else {
                     System.out.print("x");
@@ -45,7 +45,7 @@ public class Pattern4 {
             // Print 'x'
             for (int k = 1; k <= 2 * i - 1; k++) {
                 if (k % 2 == 0){
-                    System.out.print("!");
+                    System.out.print(" ");
                 } else {
                     System.out.print("x");
                 }
@@ -59,10 +59,10 @@ public class Pattern4 {
 
         // Print the following pattern
         //     x
-        //    x!x
-        //   x!x!x
-        //  x!x!x!x
-        // x!x!x!x!x
+        //    x x
+        //   x x x
+        //  x x x x
+        // x x x x x
 
         printPatternUsingWhileLoop();
         System.out.println();

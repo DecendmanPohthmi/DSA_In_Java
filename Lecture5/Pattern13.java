@@ -1,6 +1,6 @@
 package Lecture5;
 
-public class Pattern6 {
+public class Pattern13 {
 
     static void printPatternUsingWhileLoop() {
         int row = 1;

@@ -1,6 +1,6 @@
 package Lecture5;
 
-public class Pattern5 {
+public class Pattern12 {
 
     static void printPatternUsingWhileLoop() {
         System.out.println("Printing Pattern using while loop");
