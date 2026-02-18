@@ -17,5 +17,7 @@ public class xpattern {
             }
             System.out.println();
         }
+
+        sc.close();
     }
 }

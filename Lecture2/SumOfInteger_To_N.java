@@ -12,5 +12,7 @@ public class SumOfInteger_To_N {
             result += i;
         }
         System.out.println("Sum of all the natural number is " + result);
+
+        sc.close();
     }
 }

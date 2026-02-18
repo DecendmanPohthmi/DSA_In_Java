@@ -31,6 +31,7 @@ public class reverse {
         int result = fn_reverse_num(num);
         System.out.println("Reverse Number : " + result);
 
+        sc.close();
     }
     
 }

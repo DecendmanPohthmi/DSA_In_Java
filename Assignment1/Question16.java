@@ -18,5 +18,6 @@ public class Question16{
         } else {
             System.out.println("Scalene");
         }
+        sc.close();
     }
 }

@@ -16,5 +16,6 @@ public class Question11 {
         } else {
             System.out.println("Fail");
         }
+        sc.close();
     }
 }

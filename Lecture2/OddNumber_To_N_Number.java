@@ -14,5 +14,7 @@ public class OddNumber_To_N_Number {
                 System.out.println(i);
             }
         }
+
+        sc.close();
     }
 }

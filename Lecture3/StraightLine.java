@@ -26,5 +26,7 @@ public class StraightLine {
         } else {
             System.out.println("It's is not a Straight Line.");
         }
+
+        sc.close();
     }
 }

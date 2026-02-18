@@ -22,5 +22,7 @@ public class Pattern14 {
             row++;
             System.out.println();
         }
+
+        sc.close();
     }
 }

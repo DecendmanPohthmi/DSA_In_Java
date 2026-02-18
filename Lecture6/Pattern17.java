@@ -8,10 +8,10 @@ public class Pattern17 {
 
         int rows = sc.nextInt();
         int row = 1;
-        int star = rows - 1;
+        int star =  rows / 2;
         int space = 1;
 
-        while (row <= rows * 2 - 1) {
+        while (row <= rows) {
             // star
             int i = 1;
             while (i <= star) {
@@ -31,7 +31,7 @@ public class Pattern17 {
                 k++;
             }
 
-            if (row < rows) {
+            if (row < rows / 2 + 1) {
                 star--;
                 space+=2;
             } else {
@@ -41,5 +41,6 @@ public class Pattern17 {
             System.out.println();
             row++;
         }
+        sc.close();
     }
 }

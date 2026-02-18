@@ -19,5 +19,7 @@ public class LoteryGame {
         } else {
             System.out.println("Better luck next Time.");
         }
+
+        sc.close();
     }
 }

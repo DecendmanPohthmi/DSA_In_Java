@@ -25,5 +25,7 @@ public class Sum_N_Natural {
         n_number(n);
         int result = fn_n_number(n);
         System.out.println(result);
+
+        sc.close();
     }
 }

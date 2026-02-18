@@ -14,5 +14,6 @@ public class EvenToN_Number {
                 System.out.println(i);
             }
         }
+        sc.close();
     }
 }

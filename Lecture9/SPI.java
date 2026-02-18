@@ -24,5 +24,7 @@ public class SPI {
         spi(p,r,t);
         int result = fn_spi(p,r,t);
         System.out.println(result);
+
+        sc.close();
     }
 }

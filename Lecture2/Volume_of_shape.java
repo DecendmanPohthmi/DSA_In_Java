@@ -24,5 +24,6 @@ public class Volume_of_shape {
         double hemisphere = (2.0/3.0) * pi * r * r * r;
         System.out.println(hemisphere);
 
+        sc.close();
     }
 }

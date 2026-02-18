@@ -13,5 +13,7 @@ public class APSeries {
             System.out.print(i + " ");
         }
         System.out.println("");
+
+        sc.close();
     }
 }

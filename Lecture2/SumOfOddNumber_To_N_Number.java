@@ -15,5 +15,7 @@ public class SumOfOddNumber_To_N_Number {
             }
         }
         System.out.println("The sum of the odd Number is " + result);
+
+        sc.close();
     }
 }

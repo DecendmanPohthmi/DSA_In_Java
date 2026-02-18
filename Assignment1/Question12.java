@@ -31,5 +31,6 @@ public class Question12{
                 System.out.println("Sunday");
                 break;
         }
+        sc.close();
     }
 }

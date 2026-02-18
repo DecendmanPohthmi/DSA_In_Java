@@ -33,5 +33,7 @@ public class Maximum_Number {
         } else {
             System.out.println(num2 + " is greater.");
         }
+
+        sc.close();
     }
 }

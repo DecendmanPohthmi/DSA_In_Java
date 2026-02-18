@@ -12,5 +12,6 @@ public class Question8 {
         } else {
             System.out.println("No");
         }
+        sc.close();
     }
 }

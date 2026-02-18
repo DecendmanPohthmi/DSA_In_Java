@@ -25,5 +25,7 @@ public class Pattern18 {
             space--;
             row++;
         }
+
+        sc.close();
     }
 }

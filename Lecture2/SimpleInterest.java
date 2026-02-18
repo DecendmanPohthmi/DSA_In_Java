@@ -13,5 +13,7 @@ public class SimpleInterest {
 
         int result = (p * r * t) / 100;
         System.out.println(result);
+
+        sc.close();
     }
 }

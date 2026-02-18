@@ -11,5 +11,6 @@ public class Question6{
         } else {
             System.out.println("Not Greater");
         }
+        sc.close();
     }
 }

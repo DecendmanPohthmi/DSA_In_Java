@@ -43,5 +43,6 @@ public class Max_Min_3N {
 
         }
 
+        sc.close();
     }
 }

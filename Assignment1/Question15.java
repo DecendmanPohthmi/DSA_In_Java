@@ -18,5 +18,6 @@ public class Question15{
         } else {
             System.out.println(bonus);
         }
+        sc.close();
     }
 }

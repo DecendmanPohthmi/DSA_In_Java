@@ -12,5 +12,7 @@ public class Question2{
         } else {
             System.out.println("Odd");
         }
+
+        sc.close();
     }
 }

@@ -34,5 +34,7 @@ public class Pattern16 {
             System.out.println();
             row++;
         }
+
+        sc.close();
     }
 }

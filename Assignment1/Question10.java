@@ -18,5 +18,6 @@ public class Question10 {
         } else {
             System.out.println(num3);
         }
+        sc.close();
     }
 }

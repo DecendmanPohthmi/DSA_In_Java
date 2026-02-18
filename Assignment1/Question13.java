@@ -47,5 +47,6 @@ public class Question13{
                 System.out.println("December");
                 break;
         }
+        sc.close();
     }
 }

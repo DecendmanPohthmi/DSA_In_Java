@@ -19,5 +19,6 @@ public class Question7{
         } else {
             System.out.println("Not a Leap Year");
         }
+        sc.close();
     }
 }

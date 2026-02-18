@@ -39,5 +39,7 @@ public class LoteryGame2 {
         } else {
             System.out.println("Better luck next Time.");
         }
+
+        sc.close();
     }
 }

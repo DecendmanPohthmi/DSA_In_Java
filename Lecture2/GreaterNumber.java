@@ -17,5 +17,7 @@ public class GreaterNumber {
         } else {
             System.out.println("Both of the number are the same.");
         }
+
+        sc.close();
     }
 }

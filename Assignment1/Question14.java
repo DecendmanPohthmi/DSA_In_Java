@@ -19,5 +19,6 @@ public class Question14{
             amount = unit * 2;
             System.out.println(amount);
         }
+        sc.close();
     }
 }

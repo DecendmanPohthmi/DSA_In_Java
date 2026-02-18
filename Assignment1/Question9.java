@@ -15,5 +15,6 @@ public class Question9 {
         } else {
             System.out.println("Not Equal");
         }
+        sc.close();
     }
 }

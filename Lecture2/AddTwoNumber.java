@@ -11,5 +11,7 @@ public class AddTwoNumber{
 
         int result = num1 + num2;
         System.out.println("The addition of " + num1 + " And " + num2 + " = " + result);
+
+        sc.close();
     }
 }

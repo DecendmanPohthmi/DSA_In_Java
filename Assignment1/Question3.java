@@ -12,5 +12,6 @@ public class Question3{
         } else {
             System.out.println("Not Eligible");
         }
+        sc.close();
     }
 }

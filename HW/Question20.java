@@ -1,8 +1,8 @@
-package Lecture7;
+package HW;
 
 import java.util.Scanner;
 
-public class Pattern20 {
+public class Question20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print(" Enter an n number : ");

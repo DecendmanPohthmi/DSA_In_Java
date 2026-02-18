@@ -14,5 +14,7 @@ public class Question1{
         } else {
             System.out.println("Negative");
         }
+
+        sc.close();
     }
 }

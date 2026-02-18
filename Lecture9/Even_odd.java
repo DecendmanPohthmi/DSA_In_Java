@@ -33,5 +33,7 @@ public class Even_odd {
                 System.out.print(result+ " ");
             }
         }
+
+        sc.close();
     }
 }

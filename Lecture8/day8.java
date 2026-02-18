@@ -95,5 +95,7 @@ public class day8 {
         // reverse_num(num1);
 
         sumOfDigit(num1);
+
+        sc.close();
     }
 }

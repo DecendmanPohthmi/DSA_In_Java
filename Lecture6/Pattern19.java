@@ -33,5 +33,7 @@ public class Pattern19 {
             row++;
             space--;
         }
+
+        sc.close();
     }
 }
