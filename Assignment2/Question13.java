@@ -1,6 +1,8 @@
+package Assignment2;
+
 import java.util.*;
 
-public class Main {
+public class Question13 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int rows = sc.nextInt();

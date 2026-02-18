@@ -2,7 +2,7 @@ package Lecture12;
 
 import java.util.Scanner;
 
-public class main {
+public class Swappping {
 
     public static void swap_temp(int num1, int num2){
         // with out temp value
