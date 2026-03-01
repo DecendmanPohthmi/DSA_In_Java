@@ -9,6 +9,7 @@ public class Question12 {
 
         if (number == 0) {
             System.out.println(5);
+            return;
         }
 
         long reverse = 0;
