@@ -2,6 +2,22 @@ package Assignment4;
 
 import java.util.*;
 public class Question4 {
+    public static void printing_pairs(int[] array, int target) {
+        int start = 0;
+        int end = array.length-1;
+        while(start < end) {
+            int sum = array[start] + array[end];
+            if(sum == target) {
+                System.out.println(array[start]+" and "+array[end]);
+                start++;
+                end--;
+            } else if(sum > target) {
+                end--;
+            } else {
+                start++;
+            }
+        }
+    }
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -23,20 +39,7 @@ public class Question4 {
             array[j+1] = key;
         }
 
-        int start = 0;
-        int end = n-1;
-        while(start < end) {
-            int sum = array[start] + array[end];
-            if(sum == target) {
-                System.out.println(array[start]+" and "+array[end]);
-                start++;
-                end--;
-            } else if(sum > target) {
-                end--;
-            } else {
-                start++;
-            }
-        }
+        printing_pairs(array, target);
 
         sc.close();
     }

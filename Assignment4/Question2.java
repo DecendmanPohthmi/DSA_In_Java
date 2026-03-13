@@ -2,6 +2,26 @@ package Assignment4;
 
 import java.util.*;
 public class Question2 {
+    public static void triplet_number(int[] array, int target) {
+		for(int i = 0; i < array.length - 2; i++) {
+            int start = i + 1;
+            int end = array.length - 1;
+            while(start < end) {
+                int sum = array[i] + array[start] + array[end];
+                if(sum == target) {
+                    System.out.println(array[i] + ", " + array[start] + " and " + array[end]);
+                    start++;
+                    end--;
+                }
+                else if(sum > target) {
+                    end--;
+                }
+                else {
+                    start++;
+                }
+            }
+        }
+	}
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
@@ -25,24 +45,8 @@ public class Question2 {
             array[j+1] = item;
         }
 
-        for(int i = 0; i < array.length - 2; i++) {
-            int start = i + 1;
-            int end = array.length - 1;
-            while(start < end) {
-                int sum = array[i] + array[start] + array[end];
-                if(sum == target) {
-                    System.out.println(array[i] + ", " + array[start] + " and " + array[end]);
-                    start++;
-                    end--;
-                }
-                else if(sum > target) {
-                    end--;
-                }
-                else {
-                    start++;
-                }
-            }
-        }
+        triplet_number(array, target);
+
         sc.close();
     }
 }

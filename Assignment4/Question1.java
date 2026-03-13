@@ -3,6 +3,15 @@ package Assignment4;
 
 import java.util.*;
 public class Question1 {
+    public static void inverted_array(int[] array, int[] new_array, int i) {
+		if(i == array.length) return;
+
+		int temp = array[i];
+		new_array[temp] = i;
+
+		inverted_array(array, new_array, i+1);
+	}
+
     public static void main(String args[]) {
         // Your Code Here
 		Scanner sc = new Scanner(System.in);
@@ -14,15 +23,13 @@ public class Question1 {
 			array[i] = sc.nextInt();
 		}
 
-		for(int i = 0; i < array.length; i++) {
-			int num = array[i];
-			new_array[num] = i;
-		}
+		inverted_array(array, new_array, 0);
 
 		for(int i = 0; i < new_array.length; i++) {
-			System.out.print(new_array[i]+ " ");
+			System.out.print(new_array[i]+" ");
 		}
-        sc.close();
+
+		sc.close();
     }
 }
 

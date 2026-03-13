@@ -2,6 +2,22 @@ package Assignment4;
 
 import java.util.*;
 public class Question3 {
+    public static int index_return(int[] array, int target) {
+		boolean result = false;
+		int idx = 0;
+		for(int i = 0; i < array.length; i++) {
+			if(target == array[i]) {
+				idx = i;
+				result = true;
+			}
+		}
+
+		if(result) {
+			return idx;
+		}
+
+		return -1;
+	}
     public static void main(String args[]) {
         // Your Code Here
 		Scanner sc = new Scanner(System.in);
@@ -13,23 +29,15 @@ public class Question3 {
 
 		int target = sc.nextInt();
 
-		boolean result = false;
-		int idx = 0;
-		for(int i = 0; i < n; i++) {
-			if(target == array[i]) {
-				idx = i;
-				result = true;
-				break;
-			}
-		}
+		int idx = index_return(array, target);
 
-		if(result) {
+		if(idx > -1) {
 			System.out.println(idx);
 		} else {
 			System.out.println(-1);
 		}
 
-        sc.close();
+		sc.close();
     }
 }
 
