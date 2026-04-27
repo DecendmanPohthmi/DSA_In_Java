@@ -62,14 +62,50 @@ public class sortting_data {
         System.out.println();
     }
 
+    public static void merge_sort(int[] arr,int start, int end) {
+        if(start < end) {
+            int mid = start + (end - start) / 2;
+            merge_sort(arr, start, mid);
+            merge_sort(arr, mid+1, end);
+
+            merge(arr,start, mid, end);
+        }
+    }
+    
+    public static void merge(int[] nums, int start, int mid, int end) {
+        int n1 = mid - start + 1;
+        int n2 = end - mid;
+        int[] left_array = new int[n1];
+        int[] right_array = new int[n2];
+
+        for(int i = 0; i < n1; i++) left_array[i] = nums[start + i];
+        for(int i = 0; i < n2; i++) right_array[i] = nums[mid + 1 + i];
+
+        int i = 0, j = 0, k = start;
+        while(i < n1 && j < n2) {
+            if(left_array[i] < right_array[j]) {
+                nums[k++] = left_array[i++];
+            } else {
+                nums[k++] = right_array[j++];
+            }
+        }
+
+        while(i < n1) nums[k++] = left_array[i++];
+        while(j < n2) nums[k++] = right_array[j++];
+    }
+
     public static void main(String[] args) {
-        int[] arr = { 5, 3, 4, 1, 2 };
+        int[] arr = {6,7,1,0,4,2,5,10};
         for (int x : arr) {
             System.out.print(x + " ");
         }
         System.out.println();
         // bubble_sort(arr);
         // selection_sort(arr);
-        inserttion_sort(arr);
+        // inserttion_sort(arr);
+        merge_sort(arr,0,arr.length-1);
+        for(int num : arr) {
+            System.out.print(num+" ");
+        }
     }
 }
